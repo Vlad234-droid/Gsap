@@ -1,0 +1,289 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+a,
+button {
+	cursor: pointer;
+}
+a,
+button,
+h1,
+h2,
+h3,
+h4 {
+	color: rgb(40, 40, 40);
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0% 20%;
+	min-height: 8vh;
+	background: rgba(255, 255, 255, 0.6);
+	backdrop-filter: blur(10px);
+	z-index: 10;
+}
+
+nav,
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 0.9rem;
+}
+
+.nav-links a,
+.nav-links button {
+	margin-left: 2rem;
+}
+
+.logo {
+	font-size: 1rem;
+	font-weight: bold;
+}
+.buy-button {
+	padding: 0.2rem 2rem;
+	font-size: 0.6rem;
+	background-color: #3056f5;
+	color: white;
+	border: none;
+	border-radius: 1rem;
+}
+
+.first-page {
+	min-height: 100vh;
+	padding: 0 20%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.first-page-text {
+	z-index: 2;
+	text-align: center;
+	padding-bottom: 10rem;
+}
+.intro-video {
+	position: absolute;
+	width: 100%;
+}
+
+.first-page-subtitle {
+	font-size: 3rem;
+}
+
+.first-page-title {
+	font-size: 2rem;
+}
+
+.second-page {
+	min-height: 125vh;
+	color: rgba(255, 255, 255, 0.6);
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	justify-content: center;
+}
+
+.smoke-video {
+	position: absolute;
+	height: 100%;
+	width: 100vw;
+	object-fit: cover;
+	z-index: 1;
+}
+
+.second-text {
+	padding: 5% 30%;
+	position: relative;
+	z-index: 2;
+	font-size: 3.5rem;
+	font-weight: bold;
+}
+
+.third-page {
+	position: relative;
+	padding: 0% 20%;
+}
+.product-text-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 100vh;
+	background: white;
+}
+
+.phone-size {
+	font-size: 2rem;
+	font-weight: bold;
+}
+.pro-size {
+	text-align: right;
+}
+.max-size {
+	text-align: left;
+}
+.product-images {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.large-phone {
+	position: relative;
+	transform: translateX(40%) scale(0.8);
+	z-index: 1;
+}
+.small-phone {
+	position: relative;
+	transform: translateX(-40%) scale(0.8);
+	z-index: 2;
+}
+
+.retina-line {
+	position: absolute;
+	bottom: 15%;
+	left: 50%;
+	transform: translate(-50%, -15%);
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+.fourth-page {
+	min-height: 100vh;
+	position: relative;
+	display: flex;
+}
+.purchase-left {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+	background: white;
+}
+
+.phone-gallery {
+	display: flex;
+	align-self: flex-start;
+}
+.phone-gallery img {
+	transform: scale(0.8);
+}
+.phone-gallery-container {
+	min-width: 50vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.swatch-container {
+	padding: 2rem;
+	text-align: center;
+}
+.swatch-container span {
+	font-size: 0.8rem;
+}
+.swatches img {
+	padding: 0.5rem 0.3rem;
+	cursor: pointer;
+}
+.purchase-right {
+	flex: 1;
+	position: relative;
+	background: black;
+}
+.purchase-right img {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%) scale(0.8);
+	transform-origin: bottom;
+}
+.blue {
+	z-index: 1;
+}
+
+.fifth-page {
+	min-height: 100vh;
+}
+.product-video {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	z-index: 1;
+}
+.product-info-container {
+	position: relative;
+	z-index: 2;
+	color: white;
+	display: flex;
+	align-items: center;
+	min-height: 100vh;
+	justify-content: space-between;
+	padding: 0% 10rem;
+}
+
+.right-info,
+.left-info {
+	width: 20%;
+}
+.right-info h3,
+.left-info h3 {
+	padding: 3rem 0rem;
+	color: rgb(193, 193, 193);
+}
+.left-info span,
+.right-info span {
+	font-size: 1.5rem;
+	color: rgb(193, 193, 193);
+}
+
+.sixth-page {
+	min-height: 100vh;
+	padding: 10% 20%;
+	justify-content: space-between;
+	position: relative;
+	display: flex;
+}
+
+.portrait {
+	height: 70vh;
+}
+.photo-title {
+	font-size: 1.5rem;
+}
+.photo-subtitle {
+	font-size: 2.5rem;
+}
+.phone-video {
+	position: absolute;
+	bottom: 0;
+	left: 40%;
+	z-index: 2;
+	transform: translate(-40%, 0%);
+}
+.phone-video img,
+.phone-video video {
+	position: absolute;
+	bottom: 0rem;
+}
+.phone-video img {
+	z-index: 2;
+	bottom: 70px;
+	left: 0;
+	transform: scale(1.1);
+}
+.phone-video video {
+	left: 1rem;
+	bottom: 88px;
+	transform: scale(1.111);
+	border-radius: 3rem;
+}
